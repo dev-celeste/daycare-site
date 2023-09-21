@@ -1,0 +1,327 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+  color: rgb(22, 31, 42);
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2{
+  margin: 0;
+  padding: 0;
+  font-family: 'Butterfly Kids', cursive;
+}
+
+ 
+h3, 
+h4, 
+h5, 
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* HEADER */
+nav {
+  text-align: center;
+  padding: 20px 50px;
+  color: white;
+  font-size: 15px;
+}
+
+nav a {
+  color: white;
+  font-weight: 500;
+  
+}
+
+nav > ul a {
+  padding-left: 60px;
+  
+}
+
+nav > ul {
+  float: left;
+}
+
+nav > ul > li {
+  float: left;
+}
+
+nav > a {
+  float: right;
+  color: rgb(102, 118, 138);
+  background: white;
+  padding: 7px;
+  border-radius: 3px;
+}
+
+header, main {
+  background-color: darkorange;
+}
+
+/* MAIN */
+html, body {
+	height: 100%;
+    margin: 0;
+}
+
+main {
+  margin: 0;
+  text-align: center;
+  color: white;
+  min-height: 80%;
+  padding: 100px 150px;
+  background-image: url("https://lh3.googleusercontent.com/aPA5Zm5XKn4Lr5IMDgiqH06b435pVCgB5xl5uTH1TJWO2VifjYk2XqFlq9NuL7CXAvCYgzZ9O77eOMEZg48OB_tvhBCC08gbj-XP8p7SIKyR9wxHcyCngPGxJJ8b6pKHSIOCDtRYkg=w2400");
+  background-size: 1500px 800px;
+}
+
+.introText {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+main > div > h1 {
+  font-size: 80px;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+}
+
+main > div > p {
+  padding-bottom: 15px;
+  font-size: 25px;
+  
+}
+
+main > div > span {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 25px 0;
+}
+
+main > div > span > a {
+	text-decoration: none;
+	color: white;
+}
+
+.apple {
+	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(231deg) brightness(105%) contrast(101%);
+	height: 30px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+/* SECTION */
+section {
+  text-align: center;
+}
+
+/* WHY-SECTION */
+.why-section {
+  background: rgb(210, 196, 224);
+  color: rgb(22, 31, 42);
+  height: 350px;
+  padding: 90px 0;
+  min-height: 60%;
+}
+
+.why-section h2 {
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+.why-section p {
+  display: inline-block;
+  max-width: 50%;
+}
+
+/* VISIT SECTION */
+.visit {
+  min-height: 100%;
+  background: rgb(184, 222, 181);
+  padding: 150px 100px;
+}
+
+.visit > section {
+  width: 50%;
+  float: left;
+}
+
+.fake-img {
+  min-width: 400px;
+  min-height: 300px;
+  background: rgb(102, 118, 138);
+  display: inline-block;
+  background-image: url("https://lh3.googleusercontent.com/FzC5S_NUAylAinDiFgNWnU-MtGnUyH7qEvsxH28M_fxwGjsswd_KvuspweXbpQeZbrsFIXlPaksS6tYTZTsryNJAe0X7elxSPizKK3wlz34HldFmDmyNxxnrF5tuhSfQIUMQIWkPzg=w2400");
+  background-size: 400px 300px;
+}
+
+.fake-img-two {
+  min-width: 400px;
+  min-height: 300px;
+  background: rgb(102, 118, 138);
+  display: inline-block;
+  background-image: url("https://lh3.googleusercontent.com/JQw57WZqYNcP0C_ckJHFeqDn1iGF6r7P8pJ4Jve0tB0ARmt1rERSWZMJdp_kpg9dUlGo_-MrvoltAV0_GVIwQFgiDs_JX2Q6vb8qKRsvceHsiV7TCkWXCawrv-13KEGl3PsiiSoJyw=w2400");
+  background-size: 400px 300px;
+}
+
+.visit * {
+  margin-bottom: 20px;
+}
+
+.visit p {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.visit a {
+	
+}
+
+/* VOLUNTEER */
+.volunteer {
+  min-height: 60%;
+  padding: 150px 300px;
+  background: rgb(94, 169, 194);
+}
+
+.volunteer * {
+  margin-bottom: 20px;
+}
+
+.volunteer h2 {
+  font-size: 30px;
+}
+
+.volunteer p {
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.volunteer a {
+	
+}
+/* FOOTER */
+footer {
+  background: rgb(214, 162, 157);
+  color: white;
+  padding: 20px 40px;
+}
+
+/* TOP FOOTER */
+.social {
+  float: left;
+}
+
+.social, .address {
+  text-align: left;
+}
+
+.social ul {
+  margin-bottom: 10px;
+}
+
+.social h5 {
+  margin-bottom: 2px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.social li {
+  display: inline;
+  padding-right: 15px;
+}
+
+.social a {
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.social i {
+  font-size: 20px;
+}
+
+.address {
+  float: right;
+}
+
+.address > h4 {
+  margin-bottom: 10px;
+}
+
+.address > p {
+  font-size: 13px;
+}
+
+.address span {
+  display: block;
+}
+
+.email {
+	font-weight: bold;
+}
+
+.foot {
+	font-weight: bold;
+}
+
+/* BOTTOM FOOTER */
+.bottom-footer p {
+  text-align: left;
+  font-size: 14px;
+  border-top: 1px solid white;
+  padding: 10px 0;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.option-btn {
+  color: rgb(22, 31, 42);
+  background: transparent;
+  border: 1px solid gray;
+  padding: 15px 50px;
+  font-weight: 600;
+  font-size: 15px;
+}
